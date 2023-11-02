@@ -1,0 +1,7 @@
+C:\Users\Usuario\source\repos\WebServiceSOAPC\WebServiceSOAPC\bin\WebServiceSOAPC.dll.config
+C:\Users\Usuario\source\repos\WebServiceSOAPC\WebServiceSOAPC\bin\WebServiceSOAPC.dll
+C:\Users\Usuario\source\repos\WebServiceSOAPC\WebServiceSOAPC\bin\WebServiceSOAPC.pdb
+C:\Users\Usuario\source\repos\WebServiceSOAPC\WebServiceSOAPC\obj\Debug\WebServiceSOAPC.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\WebServiceSOAPC\WebServiceSOAPC\obj\Debug\WebServiceSOAPC.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\WebServiceSOAPC\WebServiceSOAPC\obj\Debug\WebServiceSOAPC.dll
+C:\Users\Usuario\source\repos\WebServiceSOAPC\WebServiceSOAPC\obj\Debug\WebServiceSOAPC.pdb

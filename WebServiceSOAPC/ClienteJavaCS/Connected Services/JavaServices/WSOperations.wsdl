@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://sw/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="WSOperations" targetNamespace="http://sw/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/ServicioWebSOAP/WSOperations?xsd=1" namespace="http://sw/" />
+    </xsd:schema>
+  </types>
+  <message name="login">
+    <part name="parameters" element="tns:login" />
+  </message>
+  <message name="loginResponse">
+    <part name="parameters" element="tns:loginResponse" />
+  </message>
+  <message name="Register">
+    <part name="parameters" element="tns:Register" />
+  </message>
+  <message name="RegisterResponse">
+    <part name="parameters" element="tns:RegisterResponse" />
+  </message>
+  <message name="cargarClientes">
+    <part name="parameters" element="tns:cargarClientes" />
+  </message>
+  <message name="cargarClientesResponse">
+    <part name="parameters" element="tns:cargarClientesResponse" />
+  </message>
+  <message name="ProcesarPago">
+    <part name="parameters" element="tns:ProcesarPago" />
+  </message>
+  <message name="ProcesarPagoResponse">
+    <part name="parameters" element="tns:ProcesarPagoResponse" />
+  </message>
+  <portType name="WSOperations">
+    <operation name="login">
+      <input wsam:Action="http://sw/WSOperations/loginRequest" message="tns:login" />
+      <output wsam:Action="http://sw/WSOperations/loginResponse" message="tns:loginResponse" />
+    </operation>
+    <operation name="Register">
+      <input wsam:Action="http://sw/WSOperations/RegisterRequest" message="tns:Register" />
+      <output wsam:Action="http://sw/WSOperations/RegisterResponse" message="tns:RegisterResponse" />
+    </operation>
+    <operation name="cargarClientes">
+      <input wsam:Action="http://sw/WSOperations/cargarClientesRequest" message="tns:cargarClientes" />
+      <output wsam:Action="http://sw/WSOperations/cargarClientesResponse" message="tns:cargarClientesResponse" />
+    </operation>
+    <operation name="ProcesarPago">
+      <input wsam:Action="http://sw/WSOperations/ProcesarPagoRequest" message="tns:ProcesarPago" />
+      <output wsam:Action="http://sw/WSOperations/ProcesarPagoResponse" message="tns:ProcesarPagoResponse" />
+    </operation>
+  </portType>
+  <binding name="WSOperationsPortBinding" type="tns:WSOperations">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="login">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Register">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cargarClientes">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ProcesarPago">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WSOperations">
+    <port name="WSOperationsPort" binding="tns:WSOperationsPortBinding">
+      <soap:address location="http://localhost:8080/ServicioWebSOAP/WSOperations" />
+    </port>
+  </service>
+</definitions>

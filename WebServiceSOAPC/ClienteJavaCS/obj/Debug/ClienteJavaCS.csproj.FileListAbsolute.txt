@@ -1,0 +1,7 @@
+C:\Users\Usuario\source\repos\WebServiceSOAPC\ClienteJavaCS\bin\Debug\ClienteJavaCS.exe.config
+C:\Users\Usuario\source\repos\WebServiceSOAPC\ClienteJavaCS\bin\Debug\ClienteJavaCS.exe
+C:\Users\Usuario\source\repos\WebServiceSOAPC\ClienteJavaCS\bin\Debug\ClienteJavaCS.pdb
+C:\Users\Usuario\source\repos\WebServiceSOAPC\ClienteJavaCS\obj\Debug\ClienteJavaCS.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\WebServiceSOAPC\ClienteJavaCS\obj\Debug\ClienteJavaCS.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\WebServiceSOAPC\ClienteJavaCS\obj\Debug\ClienteJavaCS.exe
+C:\Users\Usuario\source\repos\WebServiceSOAPC\ClienteJavaCS\obj\Debug\ClienteJavaCS.pdb

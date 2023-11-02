@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://sw/" targetNamespace="http://sw/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ProcesarPago" type="tns:ProcesarPago" />
+  <xs:element name="ProcesarPagoResponse" type="tns:ProcesarPagoResponse" />
+  <xs:element name="Register" type="tns:Register" />
+  <xs:element name="RegisterResponse" type="tns:RegisterResponse" />
+  <xs:element name="cargarClientes" type="tns:cargarClientes" />
+  <xs:element name="cargarClientesResponse" type="tns:cargarClientesResponse" />
+  <xs:element name="login" type="tns:login" />
+  <xs:element name="loginResponse" type="tns:loginResponse" />
+  <xs:complexType name="cargarClientes">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="cargarClientesResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="login">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="user" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="loginResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Register">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="user" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="cash" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RegisterResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProcesarPago">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pago" type="xs:double" />
+      <xs:element minOccurs="0" name="total" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProcesarPagoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
