@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://sw/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://sw/">
+
+<xs:element name="calcularDistancia" type="tns:calcularDistancia"/>
+
+<xs:element name="calcularDistanciaResponse" type="tns:calcularDistanciaResponse"/>
+
+<xs:element name="division" type="tns:division"/>
+
+<xs:element name="divisionResponse" type="tns:divisionResponse"/>
+
+<xs:element name="euroDolar" type="tns:euroDolar"/>
+
+<xs:element name="euroDolarResponse" type="tns:euroDolarResponse"/>
+
+<xs:element name="factorial" type="tns:factorial"/>
+
+<xs:element name="factorialResponse" type="tns:factorialResponse"/>
+
+<xs:element name="login" type="tns:login"/>
+
+<xs:element name="loginResponse" type="tns:loginResponse"/>
+
+<xs:element name="multiplicacion" type="tns:multiplicacion"/>
+
+<xs:element name="multiplicacionResponse" type="tns:multiplicacionResponse"/>
+
+<xs:element name="resta" type="tns:resta"/>
+
+<xs:element name="restaResponse" type="tns:restaResponse"/>
+
+<xs:element name="suma" type="tns:suma"/>
+
+<xs:element name="sumaResponse" type="tns:sumaResponse"/>
+
+<xs:element name="volumenPiramide" type="tns:volumenPiramide"/>
+
+<xs:element name="volumenPiramideResponse" type="tns:volumenPiramideResponse"/>
+
+<xs:complexType name="suma">
+<xs:sequence>
+<xs:element name="value_1" type="xs:double" minOccurs="0"/>
+<xs:element name="value_2" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sumaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="division">
+<xs:sequence>
+<xs:element name="value_1" type="xs:double" minOccurs="0"/>
+<xs:element name="value_2" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="divisionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="multiplicacion">
+<xs:sequence>
+<xs:element name="value_1" type="xs:double" minOccurs="0"/>
+<xs:element name="value_2" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="multiplicacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="calcularDistancia">
+<xs:sequence>
+<xs:element name="velocidad" type="xs:double" minOccurs="0"/>
+<xs:element name="tiempo" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="calcularDistanciaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="factorial">
+<xs:sequence>
+<xs:element name="valor" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="factorialResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resta">
+<xs:sequence>
+<xs:element name="value_1" type="xs:double" minOccurs="0"/>
+<xs:element name="value_2" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="restaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="user" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="volumenPiramide">
+<xs:sequence>
+<xs:element name="base" type="xs:double" minOccurs="0"/>
+<xs:element name="altura" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="volumenPiramideResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="euroDolar">
+<xs:sequence>
+<xs:element name="euro" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="euroDolarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
