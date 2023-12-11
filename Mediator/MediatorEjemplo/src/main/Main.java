@@ -19,6 +19,7 @@ public class Main {
         Usuario user2 = new UsuarioImp(mediator, "Lisa");
         Usuario user3 = new UsuarioImp(mediator, "Sara");
         Usuario user4 = new UsuarioImp(mediator, "David");
+        
         mediator.addUser(user1);
         mediator.addUser(user2);
         mediator.addUser(user3);
