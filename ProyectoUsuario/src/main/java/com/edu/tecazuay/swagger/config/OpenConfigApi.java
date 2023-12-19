@@ -12,7 +12,6 @@ import io.swagger.v3.oas.models.info.Info;
 public class OpenConfigApi {
 
 	public class OpenApiConfig {
-
 		@Bean
 		OpenAPI usersMicroserviceOpenAPI() {
 			return new OpenAPI().info(new Info().title("Documentación de API REST")
@@ -21,5 +20,4 @@ public class OpenConfigApi {
 					.version("1.0"));
 		}
 	}
-
 }

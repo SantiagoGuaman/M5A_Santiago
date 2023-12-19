@@ -28,6 +28,8 @@ public class Usuario implements Serializable {
 	private String email;
 	private Boolean estado;
 
+	//p
+	
 	public Long getId_usuario() {
 		return id_usuario;
 	}
