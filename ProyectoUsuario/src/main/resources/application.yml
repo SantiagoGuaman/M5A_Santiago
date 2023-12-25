@@ -1,0 +1,25 @@
+cloud:
+  aws:
+    credentials:
+      access-key: AKIA4XNXSBO72OXRVR5J
+      secret-key: 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
+      
+    region:
+      static: us-east-1
+    stack:
+      auto: false
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: ''
+    url: jdbc:mysql://localhost:3306/tendencias
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update

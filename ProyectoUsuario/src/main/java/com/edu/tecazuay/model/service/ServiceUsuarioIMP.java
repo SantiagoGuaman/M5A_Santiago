@@ -14,7 +14,7 @@ public class ServiceUsuarioIMP implements IUsuarioService {
 
 	@Autowired
 	IUsuarioDao usuarioDAO;
-	
+
 	@Override
 	@Transactional (readOnly = true)
 	public List<Usuario> listAllUsers() {
@@ -38,5 +38,5 @@ public class ServiceUsuarioIMP implements IUsuarioService {
 	public void deleteUsuarioByID(Long id_usuario) {
 		usuarioDAO.deleteById(id_usuario);
 	}
-	
+
 }

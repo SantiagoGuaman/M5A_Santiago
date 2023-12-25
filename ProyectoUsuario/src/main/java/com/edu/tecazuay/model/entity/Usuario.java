@@ -8,9 +8,14 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name = "usuarios")
+@Getter
+@Setter
 public class Usuario implements Serializable {
 
 	/**
@@ -28,46 +33,10 @@ public class Usuario implements Serializable {
 	private String email;
 	private Boolean estado;
 
-	//p
-	
-	public Long getId_usuario() {
-		return id_usuario;
-	}
+	@Transient
+	private String fotoUrl;
 
-	public void setId_usuario(Long id_usuario) {
-		this.id_usuario = id_usuario;
-	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public char[] getClave() {
-		return clave;
-	}
-
-	public void setClave(char[] clave) {
-		this.clave = clave;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public Boolean getEstado() {
-		return estado;
-	}
-
-	public void setEstado(Boolean estado) {
-		this.estado = estado;
-	}
+	@Transient
+	private String cedulaUrl;
 
 }

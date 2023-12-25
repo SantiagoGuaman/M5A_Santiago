@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "cloud.aws.stack.credentials.access-key",
+    "type": "java.lang.String",
+    "description": "A description for 'cloud.aws.stack.credentials.access-key'"
+  },
+  {
+    "name": "cloud.aws.stack.credentials.secret-key",
+    "type": "java.lang.String",
+    "description": "A description for 'cloud.aws.stack.credentials.secret-key'"
+  }
+]}
