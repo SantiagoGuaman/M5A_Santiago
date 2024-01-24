@@ -2,7 +2,7 @@
   "name": "mongo-front",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://SantiagoGuaman.github.io/M5A_Santiago/tree/main/Mongo-Front/mongo-front",
+  "homepage": "http://santiagoguaman.github.io./M5A_Santiago/tree/main/Mongo-Front/mongo-front",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
